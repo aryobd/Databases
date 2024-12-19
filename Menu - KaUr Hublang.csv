@@ -1,0 +1,12 @@
+level;id;parentid;path;name;url
+2;309071100;300000000;300000000->309071100;	Laporan Koreksi Rekening;/Xibar/pages/bill/report/KoreksiRekening_param1.action
+1;400000000;;400000000;Debt Management;
+2;401100000;400000000;400000000->401100000;	Surat Pemberitahuan Tunggakan (SPT);/Xibar/pages/bill/debtManagement/ps/pemutusanSementara/spt/SPT_list.action
+2;404010002;400000000;400000000->404010002;	Daftar Saldo Rekening(DSR);/Xibar/pages/bill/debtManagement/pelaporan/dsr/DSRAction_listbyzone.action
+2;404011000;400000000;400000000->404011000;	DSPL & DSR;
+3;404011100;404011000;400000000->404011000->404011100;		Rekap Per Golongan Tarif;/Xibar/ibar/indramayu/collection/report/dspl/DSPLReportAction_listRekap.action
+3;404011200;404011000;400000000->404011000->404011200;		Detil Per Pelanggan;/Xibar/ibar/indramayu/collection/report/dspl/detil/DSPLDetilReportAction_listDetil.action
+3;404011300;404011000;400000000->404011000->404011300;		Rekap Sub-Wilayah;/Xibar/ibar/indramayu/collection/report/dspl/DSPLReportAction_listSubWilayah.action
+2;406000000;400000000;400000000->406000000;	Surat Perintah Kerja (SPK);
+3;406010000;406000000;400000000->406000000->406010000;		SPK Pemutusan;/Xibar/pages/debtManagement/spk/DebtManagementSpk_list1.action
+1;909000000;;909000000;Change Password;/Xibar/pages/utility/security/membershipUser/MembershipUserAction_changePassword.action

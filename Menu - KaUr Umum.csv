@@ -1,0 +1,24 @@
+1;200000000;;200000000;Meter Reading dan Billing;
+2;207000000;200000000;200000000->207000000;Pelaporan - DRD;
+3;207020000;207000000;200000000->207000000->207020000;Laporan Awal;
+4;207020001;207020000;200000000->207000000->207020000->207020001;Rekap Rekening per Wilayah;/Xibar/ibar/indramayu/meterReading/report/rekapDRD/IndramayuReportRekapDRDAction_cabanglist.action?reportType=RekapWilayah&reportHeader=LAPORAN REKAP REKENING PER WILAYAH
+4;207020002;207020000;200000000->207000000->207020000->207020002;Rekap Rekening per Tarif;/Xibar/ibar/indramayu/meterReading/report/rekapDRD/IndramayuReportRekapDRDAction_cabanglist.action?reportType=RekapTarif&reportHeader=LAPORAN REKAP REKENING PER TARIF
+4;207030001;207030000;200000000->207000000->207030000->207030001;Rekap Rekening per Wilayah;/Xibar/pages/xibar/meterReading/report/rekapDRD/ReportRekapDRDAction_list.action?reportType=RekapWilayahAkhir&reportHeader=LAPORAN REKAP REKENING PER WILAYAH
+4;207030002;207030000;200000000->207000000->207030000->207030002;Rekap Rekening per Tarif;/Xibar/pages/xibar/meterReading/report/rekapDRD/ReportRekapDRDAction_list.action?reportType=RekapTarifAkhir&reportHeader=LAPORAN REKAP REKENING PER TARIF
+3;207040002;207000000;200000000->207000000->207040002;Daftar Rekening Ditagih;/Xibar/ibar/indramayu/meterReading/report/rekapDRD/IndramayuReportRekapDRDAction_cabanglist.action?reportType=DetilWilayah&reportHeader=LAPORAN DETIL REKENING DITAGIH
+1;300000000;;300000000;Collection;
+2;308000000;300000000;300000000->308000000;Laporan Efisiensi Penagihan;/Xibar/pages/bill/report/MonitoringPenagihanAction_report.action
+2;309010000;300000000;300000000->309010000;Rekap Penerimaan Rekening Seluruh Cabang - Komponen Pendapatan;/Xibar/pages/bill/report/PenerimaanRekeningAction_reportPenerimaanSeluruhCabang.action
+2;309011000;300000000;300000000->309011000;Rekap Penerimaan Rekening Seluruh Cabang - Golongan Tarif;/Xibar/pages/bill/report/PenerimaanRekeningAction_reportPenerimaanSeluruhCabang1.action
+2;309020000;300000000;300000000->309020000;Rekap Penerimaan Rekening Seluruh Kasir - Golongan Tarif;/Xibar/pages/bill/report/PenerimaanRekeningAction_reportPenerimaanAir.action
+2;309030000;300000000;300000000->309030000;Rekap Penerimaan Rekening Seluruh Kasir - Komponen Pendapatan;/Xibar/pages/bill/report/PenerimaanRekeningAction_reportPenerimaanCabang.action
+2;309071100;300000000;300000000->309071100;Laporan Koreksi Rekening;/Xibar/pages/bill/report/KoreksiRekening_param1.action
+2;309072000;300000000;300000000->309072000;Laporan Penerimaan Non-Air;/Xibar/pages/bill/report/LaporanPenerimaanNonAir_reportLPNA.action
+1;400000000;;400000000;Debt Management;
+3;404010003;404010001;400000000->404010001->404010003;Rekap;/Xibar/ibar/indramayu/collection/report/dspl/DSPLReportAction_list.action
+3;404010004;404010001;400000000->404010001->404010004;Detil;/Xibar/ibar/indramayu/collection/report/dspl/detil/DSPLDetilReportAction_list.action
+2;404011000;400000000;400000000->404011000;DSPL & DSR;
+3;404011100;404011000;400000000->404011000->404011100;Rekap Per Golongan Tarif;/Xibar/ibar/indramayu/collection/report/dspl/DSPLReportAction_listRekap.action
+3;404011200;404011000;400000000->404011000->404011200;Detil Per Pelanggan;/Xibar/ibar/indramayu/collection/report/dspl/detil/DSPLDetilReportAction_listDetil.action
+3;404011300;404011000;400000000->404011000->404011300;Rekap Sub-Wilayah;/Xibar/ibar/indramayu/collection/report/dspl/DSPLReportAction_listSubWilayah.action
+1;909000000;;909000000;Change Password;/Xibar/pages/utility/security/membershipUser/MembershipUserAction_changePassword.action

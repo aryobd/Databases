@@ -1,0 +1,14 @@
+level|id|parentid|path|name|url
+1|100000000||100000000|Customer Care|
+3|101000002|101000000|100000000->101000000->101000002|Survey Calon Pelanggan|/Xibar/pages/srvc/survey/SurveyAction_list.action?changeCode=A
+2|102000000|100000000|100000000->102000000|Pemutusan Sambungan Atas Permintaan Pelanggan|
+3|102000001|102000000|100000000->102000000->102000001|Pencatatan Permintaan Pemutusan Sambungan|/Xibar/pages/srvc/registration/correction/resignation/CorrectionResignationAction_list.action
+3|102000002|102000000|100000000->102000000->102000002|Pembuatan SPK Pencabutan|/Xibar/pages/srvc/workOrder/WorkOrderAction_list.action?changeCode=B&typeCode=2
+3|102000003|102000000|100000000->102000000->102000003|Pembuatan BA Pencabutan|/Xibar/pages/srvc/workOrder/ba/WorkOrderBaAction_list.action?changeCode=B&typeCode=2
+3|102000004|102000000|100000000->102000000->102000004|Pengesahan Pencabutan|/Xibar/pages/srvc/agreement/AgreementAction_list.action?changeCode=B
+2|108000000|100000000|100000000->108000000|Pemutusan Sambungan Karena Tunggakan|
+3|108000001|108000000|100000000->108000000->108000001|Pencatatan Pemutusan Sambungan|/Xibar/pages/srvc/registration/correction/disconnection/CorrectionDisconnectionAction_list.action
+3|108000002|108000000|100000000->108000000->108000002|Pembuatan SPK Pemutusan|/Xibar/pages/srvc/workOrder/WorkOrderAction_list.action?changeCode=C&typeCode=2
+3|108000003|108000000|100000000->108000000->108000003|Pembuatan BA Pemutusan|/Xibar/pages/srvc/workOrder/ba/WorkOrderBaAction_list.action?changeCode=C&typeCode=2
+3|108000004|108000000|100000000->108000000->108000004|Pengesahan Pemutusan Sambungan|/Xibar/pages/srvc/agreement/AgreementAction_list.action?changeCode=C
+1|909000000||909000000|Change Password|/Xibar/pages/utility/security/membershipUser/MembershipUserAction_changePassword.action
