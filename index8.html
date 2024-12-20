@@ -3,14 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Menu with 3D Effect</title>
+        <title>Expanded Menu with 3D Effect</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
         <style>
             .dropdown-submenu {
                 position: relative;
             }
-            
             .dropdown-menu {
                 display: none;
                 background-color: #343a40;
@@ -19,46 +18,36 @@
                 transition: all 0.4s ease;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             }
-            
-            .navbar-nav .dropdown:hover > .dropdown-menu {
+            .navbar-nav .dropdown:hover > .dropdown-menu, .dropdown-submenu:hover > .dropdown-menu {
                 display: block;
                 transform: perspective(800px) rotateX(0deg);
             }
-            
             .dropdown-submenu:hover > .dropdown-menu {
-                display: block;
-                position: absolute;
                 left: 100%;
                 top: 0;
                 margin-top: -1px;
                 transform: perspective(800px) rotateY(0deg);
             }
-            
             .dropdown-item {
                 color: #ddd;
                 padding-right: 30px !important;
                 position: relative;
             }
-            
             .dropdown-item .bi-caret-right-fill {
                 position: absolute;
                 right: 10px;
             }
-            
-            .dropdown-item:hover, .nav-link:hover {
+            .dropdown-item:hover, .nav-link:hover, .dropdown-submenu:hover > .dropdown-item {
                 background-color: #f8f9fa !important;
                 color: #212529 !important;
             }
-            
             .dropdown-item:hover {
                 background-color: #495057;
                 color: #fff;
             }
-            
             .dropdown-submenu .dropdown-item:hover {
                 background-color: #6c757d;
             }
-            
             .icon-small {
                 font-size: 0.8rem;
             }
@@ -67,217 +56,91 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    abdp
-                </a>
+                <a class="navbar-brand" href="#">abdp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                Home
-                            </a>
+                            <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link d-flex align-items-center" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link d-flex align-items-center" href="#" data-bs-toggle="dropdown">
                                 Services
                                 <i class="bi bi-caret-down-fill ms-3 icon-small"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Web Development
-                                    </a>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="#">Web Development</a>
                                 </li>
-                                <li class="dropdown-submenu">
+                                <li class="nav-item dropdown-submenu">
                                     <a class="dropdown-item d-flex align-items-center" href="#">
                                         Design
                                         <i class="bi bi-caret-right-fill icon-small"></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                UI/UX Design
-                                            </a>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="#">UI/UX Design</a>
                                         </li>
-                                        <li class="dropdown-submenu">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="#">Graphic Design</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="#">Brand Identity</a>
+                                        </li>
+                                        <li class="nav-item dropdown-submenu">
                                             <a class="dropdown-item d-flex align-items-center" href="#">
-                                                Graphic Design
+                                                Advanced Design
                                                 <i class="bi bi-caret-right-fill icon-small"></i>
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Logo Design
-                                                    </a>
+                                                <li class="nav-item">
+                                                    <a class="dropdown-item" href="#">3D Modeling</a>
                                                 </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Brand Identity
-                                                    </a>
+                                                <li class="nav-item">
+                                                    <a class="dropdown-item" href="#">Animation</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="dropdown-item" href="#">Game Design</a>
                                                 </li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                
-                                
-                                
-                                <li class="dropdown-submenu">
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="#">Mobile Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="#">SEO Services</a>
+                                </li>
+                                <li class="nav-item dropdown-submenu">
                                     <a class="dropdown-item d-flex align-items-center" href="#">
-                                        Design - Special User Interface
+                                        Marketing
                                         <i class="bi bi-caret-right-fill icon-small"></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                UI/UX Design
-                                            </a>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="#">Social Media</a>
                                         </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                Graphic Design
-                                                <i class="bi bi-caret-right-fill icon-small"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Logo Design
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Brand Identity
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="#">Content Creation</a>
                                         </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                Graphic Design - Special User Interface
-                                                <i class="bi bi-caret-right-fill icon-small"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Logo Design
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Brand Identity
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                
-                                
-                                
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Mobile Apps
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        SEO Services
-                                    </a>
-                                </li>
-                                
-                                
-                                
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                        Mobile Apps - Special User Interface
-                                        <i class="bi bi-caret-right-fill icon-small"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                UI/UX Design
-                                            </a>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                Graphic Design
-                                                <i class="bi bi-caret-right-fill icon-small"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Logo Design
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Brand Identity
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                Graphic Design - Special User Interface
-                                                <i class="bi bi-caret-right-fill icon-small"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Logo Design
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        Brand Identity
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="#">Advertising</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link d-flex align-items-center" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                Portfolio
-                                <i class="bi bi-caret-down-fill ms-3 icon-small"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Web Projects
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Mobile Apps
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Graphic Design
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Photography
-                                    </a>
-                                </li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                About
-                            </a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Contact
-                            </a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
