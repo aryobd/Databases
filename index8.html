@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Expanded Menu with 3D Effect and Dividers</title>
+        <title>Expanded Menu with Black and White Contrast</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
         <style>
@@ -12,13 +12,15 @@
             }
             .dropdown-menu {
                 display: none;
-                background-color: #343a40;
+                background-color: #000;
+                color: #fff;
                 transform: perspective(800px) rotateX(-10deg);
                 transform-origin: top;
                 transition: all 0.4s ease;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
             }
-            .navbar-nav .dropdown:hover > .dropdown-menu, .dropdown-submenu:hover > .dropdown-menu {
+            .navbar-nav .dropdown:hover > .dropdown-menu, 
+            .dropdown-submenu:hover > .dropdown-menu {
                 display: block;
                 transform: perspective(800px) rotateX(0deg);
             }
@@ -29,216 +31,222 @@
                 transform: perspective(800px) rotateY(0deg);
             }
             .dropdown-item {
-                color: #ddd;
+                color: #fff;
                 padding-right: 30px !important;
                 position: relative;
+                <!-- font-weight: 500; -->
             }
             .dropdown-item .bi-caret-right-fill {
                 position: absolute;
                 right: 10px;
             }
             .dropdown-item:hover, .nav-link:hover, .dropdown-submenu:hover > .dropdown-item {
-                background-color: #f8f9fa !important;
-                color: #212529 !important;
-            }
-            .dropdown-item:hover {
-                background-color: #495057;
-                color: #fff;
-            }
-            .dropdown-submenu .dropdown-item:hover {
-                background-color: #6c757d;
+                background-color: #fff !important;
+                color: #000 !important;
+                <!-- font-weight: bold; -->
             }
             .icon-small {
                 font-size: 0.8rem;
             }
             .dropdown-divider {
-                border-top: 1px solid #6c757d;
+                border-top: 1px solid #fff;
+            }
+            .navbar {
+                background-color: #000 !important;
+            }
+            .navbar-brand, .nav-link {
+                color: #fff !important;
+                <!-- font-weight: bold; -->
+                transition: color 0.3s ease;
+            }
+            .navbar-brand:hover, .nav-link:hover {
+                color: #000 !important;
             }
         </style>
     </head>
     <body>
         <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    abdp
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link d-flex align-items-center" href="#" data-bs-toggle="dropdown">
-                                Services
-                                <i class="bi bi-caret-down-fill ms-3 icon-small"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="#">
-                                        Web Development
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown-submenu">
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                        Design
-                                        <i class="bi bi-caret-right-fill icon-small"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a class="dropdown-item" href="#">
-                                                UI/UX Design
-                                            </a>
-                                        </li>
-                                        <li class="nav-item dropdown-submenu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                Graphic Design
-                                                <i class="bi bi-caret-right-fill icon-small"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" href="#">
-                                                        Logos
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" href="#">
-                                                        Flyers
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item dropdown-submenu">
-                                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                                        Posters
-                                                        <i class="bi bi-caret-right-fill icon-small"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class="nav-item">
-                                                            <a class="dropdown-item" href="#">
-                                                                Concert Posters
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="dropdown-item" href="#">
-                                                                Movie Posters
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown-submenu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                Advanced Design
-                                                <i class="bi bi-caret-right-fill icon-small"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" href="#">
-                                                        3D Modeling
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" href="#">
-                                                        Animation
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item dropdown-submenu">
-                                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                                        Game Design
-                                                        <i class="bi bi-caret-right-fill icon-small"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class="nav-item">
-                                                            <a class="dropdown-item" href="#">
-                                                                Character Design
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="dropdown-item" href="#">
-                                                                Environment Design
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="#">
-                                        Mobile Apps
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown-divider"></li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="#">
-                                        SEO Services
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown-divider"></li>
-                                <li class="nav-item dropdown-submenu">
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                        Marketing
-                                        <i class="bi bi-caret-right-fill icon-small"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a class="dropdown-item" href="#">
-                                                Social Media
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item" href="#">
-                                                Content Creation
-                                            </a>
-                                        </li>
-                                        <li class="nav-item dropdown-divider"></li>
-                                        <li class="nav-item dropdown-submenu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                Advertising
-                                                <i class="bi bi-caret-right-fill icon-small"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" href="#">
-                                                        Google Ads
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" href="#">
-                                                        Facebook Ads
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                About
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        ABDP
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+                                    Services
+                                    <i class="bi bi-caret-down-fill ms-3"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" href="#">
+                                            Web Development
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown-submenu">
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            Design
+                                            <i class="bi bi-caret-right-fill icon-small"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="dropdown-item" href="#">
+                                                    UI/UX Design
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown-submenu">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    Graphic Design
+                                                    <i class="bi bi-caret-right-fill icon-small"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a class="dropdown-item" href="#">
+                                                            Logos
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="dropdown-item" href="#">
+                                                            Flyers
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item dropdown-submenu">
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            Posters
+                                                            <i class="bi bi-caret-right-fill icon-small"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="nav-item">
+                                                                <a class="dropdown-item" href="#">
+                                                                    Concert Posters
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="dropdown-item" href="#">
+                                                                    Movie Posters
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown-submenu">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    Advanced Design
+                                                    <i class="bi bi-caret-right-fill icon-small"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a class="dropdown-item" href="#">
+                                                            3D Modeling
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="dropdown-item" href="#">
+                                                            Animation
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item dropdown-submenu">
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            Game Design
+                                                            <i class="bi bi-caret-right-fill icon-small"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="nav-item">
+                                                                <a class="dropdown-item" href="#">
+                                                                    Character Design
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="dropdown-item" href="#">
+                                                                    Environment Design
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" href="#">
+                                            Mobile Apps
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown-divider"></li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" href="#">
+                                            SEO Services
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown-divider"></li>
+                                    <li class="nav-item dropdown-submenu">
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            Marketing
+                                            <i class="bi bi-caret-right-fill icon-small"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="dropdown-item" href="#">
+                                                    Social Media
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="dropdown-item" href="#">
+                                                    Content Creation
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown-divider"></li>
+                                            <li class="nav-item dropdown-submenu">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    Advertising
+                                                    <i class="bi bi-caret-right-fill icon-small"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a class="dropdown-item" href="#">
+                                                            Google Ads
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="dropdown-item" href="#">
+                                                            Facebook Ads
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
