@@ -8,7 +8,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
         <style>
             .menu-container {
-                width: 200px;
+                display: inline-block;
                 background-color: #000; /* Latar belakang menu hitam */
                 padding: 1rem;
                 border-radius: 8px;
@@ -18,7 +18,7 @@
                 padding: 10px 15px;
                 margin-bottom: 5px;
                 display: block;
-                <!-- font-weight: bold; -->
+                white-space: nowrap; /* Memastikan teks tidak terpotong */
             }
             .nav-link:hover,
             .nav-item.dropdown-submenu:hover > .nav-link {
@@ -48,6 +48,7 @@
                 color: #fff; /* Teks putih di submenu */
                 padding-right: 30px !important;
                 position: relative;
+                white-space: nowrap; /* Memastikan teks tidak terpotong */
             }
             .dropdown-item .bi-caret-right-fill {
                 position: absolute;
