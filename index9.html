@@ -53,6 +53,7 @@
             .dropdown-item .bi-caret-right-fill {
                 position: absolute;
                 right: 10px;
+                margin-left: 50px; /* Memberikan jarak yang sangat lebar antara teks dan ikon */
             }
             .dropdown-item:hover {
                 background-color: #fff; /* Latar belakang submenu saat hover putih */
@@ -60,6 +61,7 @@
             }
             .icon-small {
                 font-size: 0.8rem;
+                margin-left: 10px; /* Memberi jarak tambahan antara teks dan ikon */
             }
             .dropdown-divider {
                 border-top: 1px solid #fff; /* Garis pemisah putih */
@@ -74,6 +76,92 @@
             <div class="nav-item dropdown-submenu">
                 <a class="nav-link d-flex align-items-center" href="#">
                     Services
+                    <i class="bi bi-caret-right-fill ms-auto icon-small"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        Web Development
+                    </a>
+                    <div class="dropdown-submenu">
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            Design - Special User Interface
+                            <i class="bi bi-caret-right-fill icon-small"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                UI/UX Design
+                            </a>
+                            <div class="dropdown-submenu">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    Graphic Design
+                                    <i class="bi bi-caret-right-fill icon-small"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        Logos
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Flyers
+                                    </a>
+                                    <div class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            Posters
+                                            <i class="bi bi-caret-right-fill icon-small"></i>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">
+                                                Concert Posters
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                Movie Posters
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="dropdown-item" href="#">
+                                Mobile Apps
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        SEO Services
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-submenu">
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            Marketing <i class="bi bi-caret-right-fill icon-small"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                Social Media
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Content Creation
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-submenu">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    Advertising
+                                    <i class="bi bi-caret-right-fill icon-small"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        Google Ads
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Facebook Ads
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item dropdown-submenu">
+                <a class="nav-link d-flex align-items-center" href="#">
+                    Services - Special User Interface
                     <i class="bi bi-caret-right-fill ms-auto icon-small"></i>
                 </a>
                 <div class="dropdown-menu">
