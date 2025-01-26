@@ -5,25 +5,92 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Navbar with SmartMenus</title>
         <!-- BOOTSTRAP CORE CSS -->
-        <!--
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        -->
-        <link href="bootstrap.min.css" rel="stylesheet">
         <!-- SMARTMENUS JQUERY BOOTSTRAP ADDON CSS -->
-        <!--
         <link href="https://www.unidocs.co.uk/assets/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.css" rel="stylesheet">
-        -->
-        <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
+        <style>
+            /* Custom styling for contrast */
+            .navbar {
+                background-color: #343a40; /* DARK BACKGROUND */
+                border-color: #454d55; /* SLIGHTLY LIGHTER BORDER */
+            }
+
+            .navbar .navbar-brand,
+            .navbar .nav > li > a {
+                color: #ffffff !important; /* WHITE TEXT */
+            }
+
+            .navbar .nav > li > a:hover,
+            .navbar .nav > li > a:focus {
+                background-color: #ffffff; /* WHITE BACKGROUND ON HOVER */
+                color: #000000 !important; /* BLACK TEXT ON HOVER */
+            }
+
+            .dropdown-menu {
+                background-color: #343a40; /* DROPDOWN BACKGROUND */
+                border-color: #454d55; /* DROPDOWN BORDER */
+            }
+
+            .dropdown-menu > li > a {
+                color: #ffffff !important; /* WHITE TEXT FOR DROPDOWN ITEMS */
+            }
+
+            .dropdown-menu > li > a:hover,
+            .dropdown-menu > li > a:focus {
+                background-color: #000000; /* BLACK BACKGROUND ON HOVER FOR DROPDOWN */
+                color: #ffffff !important; /* WHITE TEXT ON HOVER */
+            }
+
+            .disabled > a {
+                color: #ffffff !important; /* WHITE COLOR FOR DISABLED ITEMS */
+                pointer-events: none; /* DISABLE CLICK */
+            }
+
+            .dropdown-header {
+                color: #ffffff !important; /* WHITE TEXT FOR DROPDOWN HEADERS */
+                background-color: #343a40; /*  SAME AS DROPDOWN BACKGROUND */
+            }
+
+            /* Keep parent menu highlighted when submenu is open */
+            .nav > li:hover > a,
+            .dropdown-menu > li:hover > a {
+                background-color: #ffffff !important; /* WHITE BACKGROUND */
+                color: #000000 !important; /* BLACK TEXT */
+            }
+
+            /* For deeper levels of submenu */
+            .dropdown-menu > li > .dropdown-menu > li:hover > a {
+                background-color: #ffffff !important; /* WHITE BACKGROUND */
+                color: #000000 !important; /* BLACK TEXT */
+            }
+
+            /* Reset highlight for items that are not active or hovered */
+            .nav > li:not(:hover) > a {
+                background-color: transparent !important; /* Default background */
+                color: #ffffff !important; /* Default text color */
+            }
+
+            .dropdown-menu > li:not(:hover) > a {
+                background-color: transparent !important; /* Default background */
+                color: #ffffff !important; /* Default text color */
+            }
+
+            /* Custom styling for active menu item */
+            .nav > li.active > a {
+                background-color: #ffffff !important; /* WHITE BACKGROUND */
+                color: #000000 !important; /* BLACK TEXT */
+            }
+        </style>
     </head>
     <body>
         <!-- Navbar -->
         <div class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">Project name</a>
             </div>
@@ -76,44 +143,6 @@
                                             <li><a href="#">Menu item 20</a></li>
                                             <li><a href="#">Menu item 21</a></li>
                                             <li><a href="#">Menu item 22</a></li>
-                                            <li><a href="#">Menu item 23</a></li>
-                                            <li><a href="#">Menu item 24</a></li>
-                                            <li><a href="#">Menu item 25</a></li>
-                                            <li><a href="#">Menu item 26</a></li>
-                                            <li><a href="#">Menu item 27</a></li>
-                                            <li><a href="#">Menu item 28</a></li>
-                                            <li><a href="#">Menu item 29</a></li>
-                                            <li><a href="#">Menu item 30</a></li>
-                                            <li><a href="#">Menu item 31</a></li>
-                                            <li><a href="#">Menu item 32</a></li>
-                                            <li><a href="#">Menu item 33</a></li>
-                                            <li><a href="#">Menu item 34</a></li>
-                                            <li><a href="#">Menu item 35</a></li>
-                                            <li><a href="#">Menu item 36</a></li>
-                                            <li><a href="#">Menu item 37</a></li>
-                                            <li><a href="#">Menu item 38</a></li>
-                                            <li><a href="#">Menu item 39</a></li>
-                                            <li><a href="#">Menu item 40</a></li>
-                                            <li><a href="#">Menu item 41</a></li>
-                                            <li><a href="#">Menu item 42</a></li>
-                                            <li><a href="#">Menu item 43</a></li>
-                                            <li><a href="#">Menu item 44</a></li>
-                                            <li><a href="#">Menu item 45</a></li>
-                                            <li><a href="#">Menu item 46</a></li>
-                                            <li><a href="#">Menu item 47</a></li>
-                                            <li><a href="#">Menu item 48</a></li>
-                                            <li><a href="#">Menu item 49</a></li>
-                                            <li><a href="#">Menu item 50</a></li>
-                                            <li><a href="#">Menu item 51</a></li>
-                                            <li><a href="#">Menu item 52</a></li>
-                                            <li><a href="#">Menu item 53</a></li>
-                                            <li><a href="#">Menu item 54</a></li>
-                                            <li><a href="#">Menu item 55</a></li>
-                                            <li><a href="#">Menu item 56</a></li>
-                                            <li><a href="#">Menu item 57</a></li>
-                                            <li><a href="#">Menu item 58</a></li>
-                                            <li><a href="#">Menu item 59</a></li>
-                                            <li><a href="#">Menu item 60</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Another link</a></li>
@@ -156,17 +185,9 @@
         </div>
         <!-- BOOTSTRAP CORE JAVASCRIPT -->
         <!-- PLACED AT THE END OF THE DOCUMENT SO THE PAGES LOAD FASTER -->
-        <!--
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        -->
-        <script src="jquery-1.11.3.min.js"></script>
-        <script src="bootstrap.min.js"></script>
-        <!-- SmartMenus jQuery plugin -->
-        <!-- <script type="text/javascript" src="https://www.unidocs.co.uk/assets/smartmenus/jquery.smartmenus.js"></script> -->
-        <script type="text/javascript" src="jquery.smartmenus.js"></script>
-        <!-- SmartMenus jQuery Bootstrap Addon -->
-        <!-- <script type="text/javascript" src="https://www.unidocs.co.uk/assets/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script> -->
-        <script type="text/javascript" src="jquery.smartmenus.bootstrap.js"></script>
+        <script type="text/javascript" src="https://www.unidocs.co.uk/assets/smartmenus/jquery.smartmenus.js"></script>
+        <script type="text/javascript" src="https://www.unidocs.co.uk/assets/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
     </body>
 </html>
