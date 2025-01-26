@@ -5,11 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Navbar with SmartMenus</title>
         <!-- BOOTSTRAP CORE CSS -->
+        <!--
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        -->
+        <link href="bootstrap.min.css" rel="stylesheet">
         <!-- SMARTMENUS JQUERY BOOTSTRAP ADDON CSS -->
+        <!--
         <link href="https://www.unidocs.co.uk/assets/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+        -->
         <style>
-            /* Custom styling for contrast */
+            /* CUSTOM STYLING FOR CONTRAST */
             .navbar {
                 background-color: #343a40; /* DARK BACKGROUND */
                 border-color: #454d55; /* SLIGHTLY LIGHTER BORDER */
@@ -41,41 +46,42 @@
                 color: #ffffff !important; /* WHITE TEXT ON HOVER */
             }
 
-            .disabled > a {
-                color: #ffffff !important; /* WHITE COLOR FOR DISABLED ITEMS */
-                pointer-events: none; /* DISABLE CLICK */
-            }
+            <!-- .disabled > a { -->
+                <!-- color: #ffffff !important; /* WHITE COLOR FOR DISABLED ITEMS */ -->
+                <!-- pointer-events: none; /* DISABLE CLICK */ -->
+            <!-- } -->
 
             .dropdown-header {
                 color: #ffffff !important; /* WHITE TEXT FOR DROPDOWN HEADERS */
                 background-color: #343a40; /*  SAME AS DROPDOWN BACKGROUND */
+                font-weight: bold; /* MAKE TEXT BOLD */
             }
 
-            /* Keep parent menu highlighted when submenu is open */
+            /* KEEP PARENT MENU HIGHLIGHTED WHEN SUBMENU IS OPEN */
             .nav > li:hover > a,
             .dropdown-menu > li:hover > a {
                 background-color: #ffffff !important; /* WHITE BACKGROUND */
                 color: #000000 !important; /* BLACK TEXT */
             }
 
-            /* For deeper levels of submenu */
+            /* FOR DEEPER LEVELS OF SUBMENU */
             .dropdown-menu > li > .dropdown-menu > li:hover > a {
                 background-color: #ffffff !important; /* WHITE BACKGROUND */
                 color: #000000 !important; /* BLACK TEXT */
             }
 
-            /* Reset highlight for items that are not active or hovered */
+            /* RESET HIGHLIGHT FOR ITEMS THAT ARE NOT ACTIVE OR HOVERED */
             .nav > li:not(:hover) > a {
-                background-color: transparent !important; /* Default background */
-                color: #ffffff !important; /* Default text color */
+                background-color: transparent !important; /* DEFAULT BACKGROUND */
+                color: #ffffff !important; /* DEFAULT TEXT COLOR */
             }
 
             .dropdown-menu > li:not(:hover) > a {
-                background-color: transparent !important; /* Default background */
-                color: #ffffff !important; /* Default text color */
+                background-color: transparent !important; /* DEFAULT BACKGROUND */
+                color: #ffffff !important; /* DEFAULT TEXT COLOR */
             }
 
-            /* Custom styling for active menu item */
+            /* CUSTOM STYLING FOR ACTIVE MENU ITEM */
             .nav > li.active > a {
                 background-color: #ffffff !important; /* WHITE BACKGROUND */
                 color: #000000 !important; /* BLACK TEXT */
@@ -83,7 +89,7 @@
         </style>
     </head>
     <body>
-        <!-- Navbar -->
+        <!-- NAVBAR -->
         <div class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -95,7 +101,7 @@
                 <a class="navbar-brand" href="#">Project name</a>
             </div>
             <div class="navbar-collapse collapse">
-                <!-- Left nav -->
+                <!-- LEFT NAV -->
                 <ul class="nav navbar-nav">
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
@@ -152,7 +158,7 @@
                         </ul>
                     </li>
                 </ul>
-                <!-- Right nav -->
+                <!-- RIGHT NAV -->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="bootstrap-navbar.html">Default</a></li>
                     <li><a href="bootstrap-navbar-static-top.html">Static top</a></li>
@@ -185,9 +191,17 @@
         </div>
         <!-- BOOTSTRAP CORE JAVASCRIPT -->
         <!-- PLACED AT THE END OF THE DOCUMENT SO THE PAGES LOAD FASTER -->
+        <!--
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://www.unidocs.co.uk/assets/smartmenus/jquery.smartmenus.js"></script>
-        <script type="text/javascript" src="https://www.unidocs.co.uk/assets/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+        -->
+        <script src="jquery-1.11.3.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <!-- SmartMenus jQuery PLUGIN -->
+        <!-- <script type="text/javascript" src="https://www.unidocs.co.uk/assets/smartmenus/jquery.smartmenus.js"></script> -->
+        <script type="text/javascript" src="jquery.smartmenus.js"></script>
+        <!-- SmartMenus jQuery Bootstrap ADDON -->
+        <!-- <script type="text/javascript" src="https://www.unidocs.co.uk/assets/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script> -->
+        <script type="text/javascript" src="jquery.smartmenus.bootstrap.js"></script>
     </body>
 </html>
